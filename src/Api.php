@@ -1,6 +1,6 @@
 <?php
 
-namespace Crystal\Chess\Api
+namespace Crystal\Api;
 
 /**
  * The api handler.
