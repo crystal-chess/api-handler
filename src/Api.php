@@ -65,12 +65,17 @@ class FourPlayerChess implements Handler
      *
      * @param string $squareOne The square to start the arrow from.
      * @param string $squareTwo The square to end the arrow to.
+     * @param string $opacity   THe arrows opacity.
      *
      * @return bool Returns true if the request was sent and false if not.
      */
-    public function arrow(string $squareOne, string $squareTwo): bool
+    public function arrow(string $squareOne, string $squareTwo, string $opacity = ''): bool
     {
-        $url = $this->endpoints['arrow'] . $squareOne . $squareTwo;
+        if ($opacity === '') {
+            $url = $this->endpoints['arrow'] . $squareOne . $squareTwo;
+        } else {
+            $url = $this->endpoints['arrow'] . $squareOne . $squareTwo . '-' . $opacity;
+        }
         $resp = $this->sendRequest($url);
         if ($resp) {
             return true;
