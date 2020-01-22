@@ -1,0 +1,25 @@
+{
+    "name": "crystal-chess/api-handler",
+    "description": "A simple 4 player chess API for engines.",
+    "keywords": [],
+    "license": "MIT",
+    "type": "library",
+    "require": {
+        "php": "^7.4",
+        "ext-curl": "*"
+    },
+    "require-dev": {
+        "vimeo/psalm": "^3",
+        "phpunit/phpunit": "^8.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Crystal\\Api\\": "./src"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "prefer-stable": true
+}
