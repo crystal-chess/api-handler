@@ -23,12 +23,13 @@ class FourPlayerChess implements Handler
     /**
      * Construct a new api controller.
      *
-     * @param string $token     The api token.
-     * @param string $userAgent The user agent to set.
+     * @param string $token      The api token.
+     * @param string $userAgent  The user agent to set.
+     * @param string $accessType Whether we should use the dev beta or main api endpoints.
      *
      * @return void Returns nothing.
      */
-    public function __construct(string $token, string $userAgent = '', $accessType = 'beta')
+    public function __construct(string $token, string $userAgent = '', string $accessType = 'beta')
     {
         $accessUrl = [
             'beta' => 'https://4player-beta.chess.com',
