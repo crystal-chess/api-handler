@@ -18,7 +18,7 @@ class FourPlayerChess implements Handler
     ];
 
     /** @var string $userAgent The user agent to send. */
-    private $userAgent = 'CrystalChessApiConsole/v01.0.0 (www.chess.com/member/omatamix)';
+    private $userAgent = 'CrystalChessApiConsole/v01.0.0 (https://github.com/crystal-chess)';
 
     /**
      * Construct a new api controller.
